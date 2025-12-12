@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Facebook Classic Style</title>
+  <style>
+    /* ---- GLOBAL ---- */
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Tahoma", Arial, sans-serif;
+      background: #e7ebf2;
+      margin: 0;
+      color: #1d2a5b;
+    }
+    a { text-decoration: none; }
+
+    /* ---- CONTAINER ---- */
+    .container {
+      width: 960px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    /* ---- HEADER ---- */
+    .site-header {
+      background: #3b5998;
+      padding: 10px 0;
+      border-bottom: 3px solid #2a4270;
+      color: #fff;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      display: inline-block;
+    }
+    .top-nav { float: right; margin-top: 8px; }
+    .top-nav a {
+      color: #dfe3ee;
+      margin-left: 14px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* ---- PAGE TITLE ---- */
+    .page-title {
+      background: #3b5998;
+      color: #fff;
+      padding: 6px 8px;
+      margin: 20px 0;
+      border: 1px solid #2a4270;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .small { font-size: 12px; opacity: 0.8; }
+
+    /* ---- COLUMNS ---- */
+    .left-col { width: 260px; float: left; }
+    .right-col { width: 660px; float: right; }
+
+    /* ---- BOX ---- */
+    .box {
+      background: #fff;
+      border: 1px solid #b0c1d9;
+      margin-bottom: 12px;
+      padding: 10px;
+    }
+    .box h3 {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      color: #1d2a5b;
+      border-bottom: 1px solid #d9e0ea;
+      padding-bottom: 4px;
+    }
+    .edit {
+      font-size: 12px;
+      color: #3b5998;
+      margin-left: 6px;
+    }
+
+    /* ---- SEARCH ---- */
+    .search input {
+      width: 140px;
+      padding: 4px;
+      border: 1px solid #9cb4d8;
+      font-size: 13px;
+    }
+    .search button {
+      padding: 4px 8px;
+      border: 1px solid #3b5998;
+      background: #3b5998;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* ---- PROFILE PIC ---- */
+    .picture img {
+      width: 100%;
+      border: 4px solid #e1e5ee;
+      margin-bottom: 10px;
+    }
+    .pic-links { list-style: none; padding: 0; }
+    .pic-links li { margin: 6px 0; }
+    .pic-links a { color: #3b5998; font-size: 13px; }
+
+    /* ---- TABLE ---- */
+    .info-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .info-table td { padding: 4px 6px; }
+    .info-table th {
+      text-align: left;
+      padding: 4px 6px;
+      color: #1d2a5b;
+      font-size: 14px;
+    }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+      background: #d9dfea;
+      padding: 10px;
+      margin-top: 20px;
+      border-top: 1px solid #b0bdd1;
+      text-align: right;
+      color: #1d2a5b;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">[ thefacebook ]</div>
+      <nav class="top-nav">
+        <a href="#">home</a>
+        <a href="#">search</a>
+        <a href="#">global</a>
+        <a href="#">social</a>
+        <a href="#">invite</a>
+        <a href="#">faq</a>
+        <a href="#">logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="page-title">Scott Pearson's Profile <span class="small">(This is you)</span></h2>
+
+    <div class="left-col">
+      <section class="box search">
+        <form>
+          <input type="text" placeholder="quick search" />
+          <button>go</button>
+        </form>
+      </section>
+
+      <section class="box picture">
+        <h3>Picture <a class="edit" href="#">[edit]</a></h3>
+        <img src="https://via.placeholder.com/240x260?text=Profile+Photo" alt="Profile" />
+        <ul class="pic-links">
+          <li><a href="#">View/Make My Friends</a></li>
+          <li><a href="#">Edit My Profile</a></li>
+          <li><a href="#">My Account Preferences</a></li>
+        </ul>
+      </section>
+
+      <section class="box connection">
+        <h3>Connection</h3>
+        <p>Is this you.</p>
+      </section>
+    </div>
+
+    <div class="right-col">
+      <section class="box info">
+        <h3>Information <a class="edit" href="#">[edit]</a></h3>
+
+        <table class="info-table">
+          <tr><th>Account Info:</th><td></td></tr>
+          <tr><td>Name:</td><td>Scott Pearson, BS</td></tr>
+          <tr><td>Member Since:</td><td>January 12, 2005</td></tr>
+          <tr><td>Last Update:</td><td>February 3, 2005</td></tr>
+        </table>
+
+        <hr />
+
+        <table class="info-table">
+          <tr><th>Basic Info:</th><td></td></tr>
+          <tr><td>Email:</td><td>pearson2@scranton.edu</td></tr>
+          <tr><td>Status:</td><td>Alumnus/Alumna</td></tr>
+          <tr><td>High School:</td><td>Dunmore HS '00</td></tr>
+        </table>
+      </section>
+    </div>
+
+    <div style="clear: both;"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">Scranton</div>
+  </footer>
+
+</body>
+</html>
