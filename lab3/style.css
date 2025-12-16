@@ -1,0 +1,124 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  background: #e5eaf1;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  color: #000000;
+}
+
+a {
+  color: #3b5998;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER */
+.header {
+  background: #3b5998;
+  border-bottom: 1px solid #1d2a5b;
+}
+
+.header-inner {
+  width: 900px;
+  margin: 0 auto;
+  padding: 6px 0;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  float: right;
+  margin-top: 6px;
+}
+
+.nav a {
+  color: #d8dfea;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+/* PAGE */
+.page {
+  width: 900px;
+  background: #ffffff;
+  border: 1px solid #c3cce1;
+  margin-top: 10px;
+}
+
+.left-col {
+  width: 200px;
+  background: #f7f7f7;
+}
+
+.right-col {
+  width: 680px;
+}
+
+/* BOX */
+.box {
+  width: 100%;
+  border: 1px solid #c3cce1;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+.box th {
+  background: #d8dfea;
+  color: #1d2a5b;
+  text-align: left;
+  font-weight: bold;
+  padding: 4px;
+}
+
+.box td {
+  padding: 4px;
+}
+
+/* SEARCH */
+.search-input {
+  width: 120px;
+  font-size: 11px;
+}
+
+.search-btn {
+  font-size: 11px;
+}
+
+/* PROFILE PIC */
+.profile-pic {
+  border: 1px solid #c3cce1;
+}
+
+.links {
+  line-height: 16px;
+}
+
+/* INFO TABLE */
+.section {
+  background: #f0f2f7;
+  font-weight: bold;
+  color: #1d2a5b;
+}
+
+.label {
+  width: 120px;
+  color: #555555;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 10px;
+  background: #e5eaf1;
+  border-top: 1px solid #c3cce1;
+  font-size: 11px;
+  color: #555555;
+}
