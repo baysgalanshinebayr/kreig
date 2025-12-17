@@ -1,0 +1,396 @@
+.container{
+  width: 100%;
+  height:auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.first-div{
+  width: 100%;
+  height: 39px;
+  display: flex;
+  gap: 1.6px;
+  background-color:#1B1B6C;
+  color:white;
+  margin-left:0px;
+}
+.first-div p{
+  display: flex;
+  align-items: center;
+  font-family: "Lato";
+  font-size: 12px;
+  margin-bottom:10.6px;
+}
+img{
+  width: 25px;
+  height: 25px;
+  margin-left:9px;
+  margin-top:7.5px;
+}
+.second-div{
+  width:100%;
+  height:238px;
+  background-color:#13124F;
+}
+.second-div b{
+  display:block;
+  font-family: "Lato";
+  font-size: 24px;
+  color:white;
+  padding-left: 25px;
+  padding-top: 50px;
+  font-size:50px;
+  font-weight:300;
+}
+.second-div p{
+  font-family: "Lato";
+  padding-left: 25px;
+  color:white;
+}
+.first-b{
+  margin-bottom: -8px;
+}
+button{
+  margin-left:25px;
+  margin-top:6px;
+  padding-left: 12.7px;
+  padding-right: 12.7px;
+  padding-bottom: 7.6px;
+  padding-top: 8px;
+  background-color: #F61067;
+  color: white;
+  border: none;
+  font-size:10px;
+}
+.second-container{
+  display: flex;
+  gap:30px;
+  width:100%;
+  height:407px;
+}
+.main-first{
+  width: 65%;
+}
+.main-second{
+  width: 35%;
+}
+.main-first p{
+  font-family: "Lato";
+  margin-left:25px;
+  margin-top:50px;
+  font-size:35px;
+}
+.main-first .horizontal-line {
+  width:100%;
+  height:0.95px;
+  background-color:#eeeeee;
+  margin-top:-17px;
+}
+
+.main-first .Sentence{
+  font-family: "Lato";
+  margin-left:25px;
+  font-size:13.6px;
+  margin-top:-17px;
+  width:100%;
+}
+.my-video{
+  margin-left:25px;
+  width:100%;
+  margin-top:20px;
+  display:block;
+}
+.second-button{
+  background-color:#9090A5;
+  margin-left:25px;
+  margin-top:30px;
+  padding-left:10px;
+  padding-right:80px;
+  padding-top:20px;
+  padding-bottom:30px;
+  color:white;
+  font-size:10px;
+  border:none;
+  width:100%;
+  text-align:left;
+  height:20px;
+  font-size:13.5px;
+}
+.whoa{
+  padding-left:10px;
+  padding-bottom:30px;
+}
+.third-button{
+  align-items:center;
+  justify-content: center;
+  Gap:5px;
+  display:flex;
+  background-color:#F61067;
+  width:93.5%;
+  margin-top:43px;
+  height:38px;
+  margin-left:22px;
+}
+.three{
+  display:flex;
+  background-color:#352BA5;
+  border-radius:100%;
+  width:18px;
+  height:15px;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-button{
+  font-family:"Lato";
+  background-color:#9090A5;
+  width:93.5%;
+  margin-top:20px;
+  margin-left:22px;
+  text-align:left;
+  height:47px;
+  font-size:15px;
+}
+.search{
+  background-color:#13124F;
+  width:93.5%;
+  height:182px;
+  margin-top:0px;
+  margin-left:22px;
+}
+.text {
+  width:auto;
+  font-family: "Lato";
+  padding-left:15px;
+  padding-right:10px;
+  padding-top:15px;
+  font-size:16.4px;
+  color:white;
+}
+.custom-input{
+  font-family:"Lato";
+  font-weight: 700;
+  margin-top:20px;
+  margin-left:15px;
+  padding-left:12px;
+  width:90%;
+  height:26px;
+  border-top: 3px solid #cccccc;
+  border-bottom: 3.9px solid #cccccc;
+  border-right:none;
+  border-left:none;
+  background-color:#1B1B6C;
+  font-size:14.5px;
+  color:#cccccc;
+}
+.Send{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#F61067;
+  color:white;
+  margin-left:15px;
+  width:93%;
+  margin-top:17.5px;
+  height:38px;
+}
+.test{
+  display:flex;
+  margin-top:0px;
+  margin-left:22px;
+  margin-right:11px;
+  justify-content: center;
+  align-items: center;
+  background-color:#352BA5;
+  height:38px;
+  color:white;
+  font-family: "Lato";
+  font-size:10px;
+  text-decoration: underline;
+}
+.last-div{
+  height:160px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-right:1px solid #cccccc;
+  border-left:1px solid #cccccc;
+  margin-left:23px;
+  margin-right:9px;
+  margin-top:23px;
+  font-weight:700;
+  font-family:"Lato";
+  padding-left:15px;
+
+}
+.texxt{
+  margin-top:10px;
+}
+.VS {
+  display:flex;
+  height:9.6px;
+  margin-left:0px;
+  margin-right:9px;
+  margin-top:10px;
+}
+.red{
+  background-color:#F61067;
+  width:70%;
+}
+.green{
+  background-color:#2AD392;
+  width:30%;
+}
+.lastt-div{
+  display:flex;
+  height:30px;
+  margin-left:0px;
+  margin-right:9px;
+  margin-top:10px;
+  gap:15px;
+}
+.Cool{
+  background-color:#F61067;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  width:50%;
+  font-size:13px;
+}
+.Lame{
+  border-top: 2.8px solid #2AD392;
+  border-bottom: 2.8px solid #2AD392;
+  border-right:2.8px solid #2AD392;
+  border-left:2.8px solid #2AD392;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#2AD392;
+  width:50%;
+  font-size:13px;
+}
+.copyright{
+  display:flex;
+  align-items: center;
+  background-color:#13124F;
+  height:20px;
+  margin-top:460px;
+  width:98.5%;
+  height:37px;
+  color:white;
+  font-size:11px;
+  justify-content: flex-start;
+  padding-left: 24px;
+  margin-left: 0px;
+  margin-right:15px;
+  margin-bottom:-6px;
+}
+
+@media (max-width: 768px){
+  .second-container{
+    flex-direction: column; /* баганууд stacked болно */
+  }
+
+  .main-first, .main-second{
+    width: 100%;
+    margin: 0;
+    flex: 1 1 100%; /* stacked mobile */
+  }
+
+  .third-button, .fourth-button, .Send, .second-button{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .my-video{
+    width: 100%;
+    height: auto;
+  }
+
+  .container{
+    min-height: auto; /* зөвхөн mobile-д */
+  }
+  .my-video {
+    width: 90%;
+  }
+  .second-button {
+    margin-left:25px;
+    width:90%;
+  }
+  .whoa {
+    font-size:12px;
+  }
+  .third-button{
+    margin-left:25px;
+    width:90%;
+    margin-top: -8px;
+  }
+  .fourth-button{
+    margin-left:25px;
+    width:90%;
+  }
+  .search{
+    margin-left:25px;
+    width:90%;
+  }
+  .test{
+    margin-left:25px;
+    width:90%;
+  }
+  .copyright{
+    margin-top:600px;
+  }
+}
+
+@media (max-width: 480px){
+  .container{
+    width:auto;
+  }
+  .first-div p{
+    font-size: 10px;
+  }
+  
+  .second-div b{
+    font-size: 30px;
+  }
+
+  .main-first p{
+    font-size: 20px;
+  }
+
+  .main-first .Sentence{
+    font-size: 12px;
+    width:91%;
+  }
+  .my-video {
+    width: 90%;
+  }
+  .second-button {
+    margin-left:25px;
+    width:90%;
+  }
+  .whoa {
+    font-size:12px;
+  }
+  .third-button{
+    margin-left:25px;
+    width:90%;
+    margin-top: -8px;
+  }
+  .fourth-button{
+    margin-left:25px;
+    width:90%;
+  }
+  .search{
+    margin-left:25px;
+    width:90%;
+  }
+  .test{
+    margin-left:25px;
+    width:90%;
+  }
+  .copyright{
+    margin-top:560px;
+  }
+}

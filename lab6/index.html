@@ -6,23 +6,22 @@
 
     <title>Netflix Clone Website – Movies, Series and Entertainment</title>
 
-    <!-- SEO -->
+  
     <meta name="description" content="Netflix clone website built using HTML and CSS with movie categories, banners, scrolling rows, and responsive layout for front-end learning and practice.">
 
-    <!-- Icons -->
+    
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-    <!-- CSS -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- SEO H1 (hidden, UI-д нөлөөлөхгүй) -->
     <h1 style="display:none;">
         Netflix Clone Website with Movies, Series, and Entertainment Categories
     </h1>
 
-    <!-- SEO Paragraphs (hidden) -->
+   
     <p style="display:none;">
         This Netflix clone website is created using HTML and CSS to demonstrate a modern streaming platform layout.
         The page includes movie categories such as Netflix Originals, Comedy, Romance, Sci-Fi, Documentary, and Kids movies.
@@ -31,13 +30,10 @@
         The layout uses flexbox scrolling rows and a banner section similar to the Netflix interface.
     </p>
 
-    <!-- NAV -->
     <div class="nav" id="nav">
         <img src="images/netflix-logo.png" class="nav_logo" alt="Netflix clone logo">
         <img src="images/netflix-avatar.png.png" class="nav_avatar" alt="User profile avatar">
     </div>
-
-    <!-- BANNER -->
     <header class="banner">
         <div class="banner_contents">
             <h2 class="banner_title">Money Heist</h2>
@@ -52,7 +48,6 @@
         <div class="banner--fadeBottom"></div>
     </header>
 
-    <!-- NETFLIX ORIGINALS -->
     <section class="row" id="originals">
         <h2>Netflix Originals</h2>
         <div class="row_posters">
@@ -65,7 +60,6 @@
         </div>
     </section>
 
-    <!-- COMEDY -->
     <section class="row" id="comedy">
         <h2>Comedy Movies</h2>
         <div class="row_posters">
@@ -89,7 +83,6 @@
         </div>
     </section>
 
-    <!-- ROMANCE -->
     <section class="row" id="romance">
         <h2>Romance Movies</h2>
         <div class="row_posters">
@@ -102,7 +95,6 @@
         </div>
     </section>
 
-    <!-- SCI-FI -->
     <section class="row" id="scifi">
         <h2>Sci-Fi Movies</h2>
         <div class="row_posters">
@@ -126,7 +118,6 @@
         </div>
     </section>
 
-    <!-- DOCUMENTARY -->
     <section class="row" id="documentary">
         <h2>Documentary</h2>
         <div class="row_posters">
@@ -139,9 +130,7 @@
             
         </div>
     </section>
-
-    <!-- KIDS -->
-    <section class="row" id="kids">
+        <section class="row" id="kids">
         <h2>Kids Movies</h2>
         <div class="row_posters">
             <img src="images/small-movie1.jpg" class="row_poster" alt="Kids movie poster">
@@ -162,13 +151,10 @@
         </div>
     </section>
 
-    <!-- INTERNAL + EXTERNAL LINKS (hidden) -->
     <a href="#nav" style="display:none;">Back to top</a>
     <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" style="display:none;">
         Netflix official website
     </a>
-
-    <!-- JS -->
     <script>
         const nav = document.getElementById("nav");
         window.addEventListener("scroll", () => {
