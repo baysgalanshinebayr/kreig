@@ -3,37 +3,107 @@
 <head>
   <title>Thrall's Abilities</title>
   <style>
-    body { background-color: #101010; color: #eee; font-family: Arial; }
-    a { color: #00ffff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    table { width: 80%; margin: auto; border: 1px solid #00ffcc; }
-    td { padding: 15px; }
+    body {
+      background-color: #101010;
+      color: #eee;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 85%;
+      margin: 40px auto;
+      border: 1px solid #00ffcc;
+      border-collapse: collapse;
+      background-color: #181818;
+    }
+
+    td {
+      padding: 20px;
+      vertical-align: top;
+    }
+
+    .header {
+      background-color: #222;
+      text-align: center;
+    }
+
+    .nav {
+      width: 20%;
+      border-right: 1px solid #00ffcc;
+    }
+
+    .ability {
+      margin-bottom: 22px;
+      overflow: hidden;
+    }
+
+    .ability img {
+      float: right;
+      width: 64px;
+      height: 64px;
+      margin-left: 15px;
+      border: 2px solid #00ffcc;
+      border-radius: 6px;
+      background-color: #000;
+    }
   </style>
 </head>
 <body>
-  <table>
-    <tr style="background-color: #222;">
-      <td colspan="2" align="center"><h1>Thrall's Abilities</h1></td>
-    </tr>
-    <tr>
-      <td width="20%" valign="top">
-        <b>Navigation</b><br><br>
-        <a href="index.html">Home</a><br>
-        <a href="about.html">About</a><br>
-        <a href="abilities.html">Abilities</a><br>
-        <a href="friends.html">Allies</a><br>
-        <a href="contact.html">Contact</a>
-      </td>
-      <td>
-        <h2>Powers of the Shaman</h2>
-        <ul>
-          <li><b>Chain Lightning</b> – Unleashes lightning upon multiple foes.</li>
-          <li><b>Earthquake</b> – Summons the fury of the earth to destroy enemies.</li>
-          <li><b>Feral Spirit</b> – Calls forth spectral wolves to fight alongside him.</li>
-          <li><b>Windfury</b> – Enhances his weapon with the speed of the wind.</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+
+<table>
+  <tr class="header">
+    <td colspan="2">
+      <h1>Thrall – Far Seer Abilities</h1>
+      <p><i>Warcraft III: The Frozen Throne</i></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nav">
+      <b>Navigation</b><br><br>
+      <a href="index.html">Home</a><br><br>
+      <a href="about.html">About</a><br><br>
+      <a href="abilities.html">Abilities</a><br><br>
+      <a href="friends.html">Allies</a><br><br>
+      <a href="contact.html">Contact</a>
+    </td>
+
+    <td>
+      <div class="ability">
+        <img src="chain_lightning.png" alt="Chain Lightning">
+        <b>Chain Lightning</b><br>
+        Hurls a bolt of lightning that bounces between enemy units, dealing damage with each jump.
+      </div>
+
+      <div class="ability">
+        <img src="far_sight.png" alt="Far Sight">
+        <b>Far Sight</b><br>
+        Reveals a distant area of the map, allowing Thrall to scout enemy positions.
+      </div>
+
+      <div class="ability">
+        <img src="feral_spirit.png" alt="Feral Spirit">
+        <b>Feral Spirit</b><br>
+        Summons Spirit Wolves to aid Thrall in combat.
+      </div>
+
+      <div class="ability">
+        <img src="earthquake.png" alt="Earthquake">
+        <b>Earthquake (Ultimate)</b><br>
+        Causes the ground to shake violently, damaging buildings and slowing enemies.
+      </div>
+    </td>
+  </tr>
+</table>
+
 </body>
 </html>
