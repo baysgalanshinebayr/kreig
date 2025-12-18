@@ -1,193 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rexxar — Nomad CV</title>
+
   <style>
-    /* Basic reset */
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      font-family: 'Georgia', 'Times New Roman', serif;
-      background: linear-gradient(180deg,#f6f4ef 0%, #efe9df 100%);
-      color:#2e2a23;
-      padding:24px;
-      -webkit-font-smoothing:antialiased;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
     }
 
-    /* Frame */
-    .cv-wrap{
-      max-width:900px;
-      margin:0 auto;
-      background: #fffdf8;
-      border: 8px solid #3a2f21;
-      box-shadow: 0 12px 30px rgba(40,30,20,0.12);
-      padding:28px;
-      position:relative;
-      overflow:hidden;
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(10,10,8,0.85), rgba(10,10,8,0.95)),
+        url("background.jpg") center / cover no-repeat fixed;
+      color: #e6e2d3;
+      line-height: 1.7;
     }
 
-    /* Decorative top band (nomadic sash) */
-    .sash{
-      height:66px;
-      background: linear-gradient(90deg,#7b3f2d 0%, #b56a3f 50%, #7b3f2d 100%);
-      color:#fff;
-      padding:10px 22px;
-      display:flex;
-      align-items:center;
-      gap:18px;
-      margin:-28px -28px 18px -28px;
-      box-sizing:content-box;
-    }
-    .crest{
-      width:60px;height:60px;border-radius:50%;
-      background:radial-gradient(circle at 35% 30%, #fdeecf 0%, #e8b973 60%);
-      border:3px solid rgba(255,255,255,0.2);
-      display:flex;align-items:center;justify-content:center;font-weight:bold;color:#3a2f21;
-      font-size:18px;flex:0 0 60px;
-    }
-    .name-block{font-size:20px;}
-    .name-block .name{font-size:28px;font-weight:700;letter-spacing:0.6px}
-    .name-block .clan{font-size:13px;opacity:0.9}
-
-    /* Layout columns */
-    .columns{display:grid;grid-template-columns:260px 1fr;gap:18px}
-
-    /* Left column (sidebar) */
-    .sidebar{padding:8px}
-    .panel{background:#fff;border:1px solid #e4d9c9;padding:12px;margin-bottom:12px}
-    .panel h4{font-size:13px;margin-bottom:8px;color:#3a2f21}
-    .profile-pic{width:100%;height:260px;background:url('https://via.placeholder.com/260x260?text=Crest') center/cover no-repeat;border:4px solid #efe1cf}
-    .tribal-list{list-style:none;margin-top:10px}
-    .tribal-list li{padding:6px 0;border-bottom:1px dashed #efe3d3;font-size:14px}
-
-    /* Right column (main) */
-    .main{padding:8px}
-    .section{margin-bottom:14px}
-    .section h3{font-family: 'Georgia', serif;font-size:18px;margin-bottom:8px;color:#2e2a23}
-    .about{font-size:15px;line-height:1.5;color:#3b352d}
-
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:#f5efe6;padding:6px 10px;border-radius:999px;border:1px solid #e6d9c8;font-size:13px}
-
-    .experience .item{margin-bottom:10px}
-    .role{font-weight:700}
-    .meta{font-size:13px;color:#6b5e52;margin-bottom:6px}
-    .bullets{margin-left:16px;margin-top:6px}
-
-    /* Footer crest row */
-    .map-row{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:8px;border-top:1px dashed #efe3d3}
-    .map-row .signature{font-family: 'Brush Script MT', cursive;font-size:26px;color:#6b4a2e}
-
-    /* Print friendly */
-    @media print{
-      body{background:#fff}
-      .cv-wrap{box-shadow:none;border:2px solid #000}
-      .sash{display:none}
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 50px;
+      background: rgba(20, 20, 15, 0.9);
+      border: 1px solid #4a4a32;
+      border-radius: 14px;
+      backdrop-filter: blur(3px);
     }
 
-    /* Responsive */
-    @media (max-width:720px){
-      .cv-wrap{padding:18px}
-      .columns{grid-template-columns:1fr}
-      .sidebar .profile-pic{height:180px}
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      letter-spacing: 3px;
+      color: #c9b458;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 15px;
+      color: #b5b08a;
+      text-transform: uppercase;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #c9b458;
+      margin: 25px auto 0;
+      display: block;
+    }
+
+    section {
+      margin-bottom: 35px;
+    }
+
+    section h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #c9b458;
+      text-transform: uppercase;
+      border-left: 4px solid #6b6b3f;
+      padding-left: 12px;
+    }
+
+    .about p {
+      color: #d2ccb0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "➤";
+      position: absolute;
+      left: 0;
+      color: #c9b458;
+    }
+
+    .job {
+      margin-bottom: 25px;
+    }
+
+    .job h3 {
+      font-size: 18px;
+      color: #f0ecd6;
+    }
+
+    .job span {
+      font-size: 14px;
+      color: #a9a37b;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #8f8a63;
     }
   </style>
 </head>
+
 <body>
-  <div class="cv-wrap" id="cv">
-    <div class="sash">
-      <div class="crest">⚑</div>
-      <div class="name-block">
-        <div class="name">Your Name Here</div>
-        <div class="clan">Clan: <strong>Windwalkers</strong> • Totem: <strong>Snow Leopard</strong></div>
+  <div class="container">
+
+    <header>
+      <h1>REXXAR</h1>
+      <p>Nomad • Beastmaster • Wanderer of Azeroth</p>
+      <img src="rexxar.jpg" alt="Rexxar Nomad" class="profile-img">
+    </header>
+
+    <section class="about">
+      <h2>Way of Life</h2>
+      <p>
+        A solitary nomad who rejects cities and rigid societies. Lives by the land,
+        follows ancient paths, and survives through strength, instinct, and respect
+        for nature.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Survival Skills</h2>
+      <ul>
+        <li>Extreme wilderness survival</li>
+        <li>Beast companionship and command</li>
+        <li>Tracking across hostile terrain</li>
+        <li>Primitive combat mastery</li>
+        <li>Nomadic navigation and foraging</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <h3>Independent Nomad & Hunter</h3>
+        <span>Across Azeroth — Lifelong</span>
+        <p>
+          Travels without permanent shelter. Protects sacred lands, hunts for survival,
+          and avoids political power structures.
+        </p>
       </div>
-      <div style="margin-left:auto;text-align:right;font-size:13px;opacity:0.95">Nomad • Craftsman • Story-keeper</div>
-    </div>
 
-    <div class="columns">
-      <aside class="sidebar">
-        <div class="panel">
-          <div class="profile-pic" aria-hidden="true"></div>
-          <ul class="tribal-list">
-            <li><strong>Location:</strong> Mobile — follows the seasons</li>
-            <li><strong>Born:</strong> 1990</li>
-            <li><strong>Languages:</strong> Mongolian, English</li>
-            <li><strong>Contact:</strong> +xxx xxx xxxx | email@example.com</li>
-          </ul>
-        </div>
+      <div class="job">
+        <h3>Champion of the Horde</h3>
+        <span>When called upon</span>
+        <p>
+          Temporarily allies with organized forces only when balance or survival
+          demands intervention.
+        </p>
+      </div>
+    </section>
 
-        <div class="panel">
-          <h4>Tools Carried</h4>
-          <p style="font-size:14px">Knife, Loom, GPS, Laptop (offline maps), Notebook</p>
-        </div>
+    <section class="traits">
+      <h2>Nomad Traits</h2>
+      <ul>
+        <li>No permanent home</li>
+        <li>Minimal possessions</li>
+        <li>High self-reliance</li>
+        <li>Deep bond with animals</li>
+      </ul>
+    </section>
 
-        <div class="panel">
-          <h4>Quick Talismans (Skills)</h4>
-          <div class="skills">
-            <span class="skill">Tracking</span>
-            <span class="skill">Leatherwork</span>
-            <span class="skill">Carpentry</span>
-            <span class="skill">Navigation</span>
-            <span class="skill">Storytelling</span>
-          </div>
-        </div>
-      </aside>
+    <footer>
+      Lives by instinct. Leaves no trace.
+    </footer>
 
-      <main class="main">
-        <section class="section about">
-          <h3>Personal Markings</h3>
-          <p>I am a wandering craftsperson and guide. I choose paths that test my skill and reward community. I teach, mend, build and lead small groups when the winter winds come. Adaptable, calm under pressure, and deeply curious.</p>
-        </section>
-
-        <section class="section experience">
-          <h3>Journey Path (Experience)</h3>
-
-          <div class="item">
-            <div class="role">Lead Guide — Steppe Routes Collective</div>
-            <div class="meta">2018 — Present</div>
-            <ul class="bullets">
-              <li>Led seasonal migrations for caravans of 20+ people across varied terrain.</li>
-              <li>Organized resource sharing and conflict resolution between camps.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="role">Craftsman & Trader — Nomad Market</div>
-            <div class="meta">2014 — 2018</div>
-            <ul class="bullets">
-              <li>Designed and sold traditional textiles and leather goods at regional markets.</li>
-              <li>Managed trade relations with settled and nomadic groups.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section education">
-          <h3>Knowledge Scrolls (Education)</h3>
-          <p><strong>School of Journeys</strong> — Apprenticeship in navigation & textile craft (2010–2013)</p>
-        </section>
-
-        <section class="section references">
-          <h3>Allies of the Journey (References)</h3>
-          <p>Available on request — Elders, Caravan Leaders, Market Partners.</p>
-        </section>
-
-        <div class="map-row">
-          <div>Map / Tribal Crest (optional image)</div>
-          <div class="signature">Your Mark</div>
-        </div>
-
-      </main>
-    </div>
   </div>
-
-  <!--
-    How to use:
-    - Replace text content with your personal details.
-    - Replace the profile-pic background-image URL with your crest/photo.
-    - Change the crest symbol (inside .crest) to a small image: use <img> or background-image.
-    - Save as nomadic_tribe_cv.html and open in browser.
-  -->
 </body>
 </html>
+
